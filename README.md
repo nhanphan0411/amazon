@@ -7,11 +7,9 @@
 
 Every minute, the world loses an area of forest the size of 48 football fields. And deforestation in the Amazon Basin accounts for the largest share, contributing to reduced biodiversity, habitat loss, climate change, and other devastating effects. But better data about the location of deforestation and human encroachment on forests can help governments and local stakeholders respond more quickly and effectively.
 
-This analysis uses Deep Learning to classify the spatial images of the Amazon forest taken by the satilite. And from that, it hopes to shed a light on understanding how the forest has change naturally and manually. Thus, help preventing deforestation.
+This analysis uses Deep Learning to classify the spatial images of the Amazon forest taken by the satellite. From that, it hopes to shed a light on understanding how the forest has change naturally and manually. Thus, help preventing deforestation.
 
-The dataset is acquired from the Kaggle competition in 2016. It contains more than 40.000 images, taken by Planet using sattelites.
-
-
+The project is built on dataset from the Kaggle competition in 2016. It contains more than 40.000 images, taken by Planet using sattelites.
 
 > Planet, designer and builder of the world’s largest constellation of Earth-imaging satellites, will soon be collecting daily imagery of the entire land surface of the earth at 3-5 meter resolution. While considerable research has been devoted to tracking changes in forests, it typically depends on coarse-resolution imagery from Landsat (30 meter pixels) or MODIS (250 meter pixels). This limits its effectiveness in areas where small-scale deforestation or forest degradation dominate.
 
