@@ -35,7 +35,6 @@ Training information:
 
 
 ### **☆ CHALLENGE**
-Several key learnings undercovered through the analysis:
 
 1. **Multi-label:** Each image is labeled with multiple tags (at least 2, at max 9). The tags fall into 17 categories, which are the forest landscape types. Since the tags in each label are mutually exclusive, they are treated as multiple binary classification problems. Thus, `binary cross-entropy` are chosen to be the loss function. 
 
