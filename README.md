@@ -45,9 +45,9 @@ Several key learnings undercovered through the analysis:
 
 2. **Imbalance:** The dataset is severely imbalance with tags like Primary or Agriculture appear in 90% of the dataset. While other tags like Blooming or Conventional Mine can only be seen in less than 500 observations (even less than 100 for Burn Down).
 
-  To tackle the problem of imbalance dataset, evaluation metrics has to be chosen carefully. In the first base-line experiment, the model was totally bias toward the major tags. It predicts the major tags to appear in every data and almost never made a prediction with the minor tags. 
+> To tackle the problem of imbalance dataset, evaluation metrics has to be chosen carefully. In the first base-line experiment, the model was totally bias toward the major tags. It predicts the major tags to appear in every data and almost never made a prediction with the minor tags. 
 
-  `F2` is chosen to be the main metrics to evaluate the training. It watches over the harmonic mean between the Precision and Recall while favors Recall specifically. In other word, it is the attempt to reduce the number of False Negative, where the model fails to identify the absence of a tag. 
+> `F2` is chosen to be the main metrics to evaluate the training. It watches over the harmonic mean between the Precision and Recall while favors Recall specifically. In other word, it is the attempt to reduce the number of False Negative, where the model fails to identify the absence of a tag. 
 
 3. **Optimization:** 400.000 images, a CNN model, and Google Colab's limited resource do not seem to mix well together. The training was slow at first and interupted often. Several improvements, mostly on the Tensorflow pipeline, were conducted to speed up the training:
 
@@ -56,4 +56,4 @@ Several key learnings undercovered through the analysis:
 
 4. **Processing image with Tensorflow:** The dataset contains images in JPG - RGBA. The built-in decode function `tf.io.decode_jpeg` only works on 1 or 3-channel image. Attempt on encoding a JPG RGBA image returns black black and black. We need a tensorflow encoding function to work in this part because the pipeline is built entirely on Tensor for the optimization purpose. 
 
-  To tackle the problem, the raw images were first read by Matplotlib then converted into byte-like and wrote into TFRecords. When reading the data from TF Record, instead of using the built-in decode image function, we use `tf.io.parse_tensor` following with reshaping.
+> To tackle the problem, the raw images were first read by Matplotlib then converted into byte-like and wrote into TFRecords. When reading the data from TF Record, instead of using the built-in decode image function, we use `tf.io.parse_tensor` following with reshaping.
