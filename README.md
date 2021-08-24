@@ -9,9 +9,7 @@ Every minute, the world loses an area of forest the size of 48 football fields. 
 
 This analysis uses Deep Learning to classify the spatial images of the Amazon forest taken by the satilite. And from that, it hopes to shed a light on understanding how the forest has change naturally and manually. Thus, help preventing deforestation.
 
-The dataset is acquired from the Kaggle competition in 2016: https://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data
-
-The dataset contains more than 40.000 images, taken by Planet using sattelites.
+The dataset is acquired from the Kaggle competition in 2016. It contains more than 40.000 images, taken by Planet using sattelites.
 
 
 
